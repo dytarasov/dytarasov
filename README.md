@@ -1,19 +1,19 @@
-### Hi, I'm Dmitriy 👋
+### Dmitriy Tarasov
 
-Software developer, currently working mostly as an **ML/AI engineer**: LLM agents, RAG and tool-calling pipelines. I also like PostgreSQL and networking.
-
----
-
-**🛰 [ftybucks](https://github.com/dytarasov/ftybucks-public)**: a VPN that looks like PostgreSQL streaming replication to DPI. It runs a real PG wire handshake with a libpq TLS fingerprint and carries traffic in `CopyData` frames with ChaCha20-Poly1305. The gateway uses WireGuard with GeoIP split routing and an ECMP pool of tunnels with automatic failover. <sub>Go</sub>
-
-**🤖 [claudetelegram](https://github.com/dytarasov/claudetelegram)**: Claude Code on a server, driven from Telegram. The bot edits its own code, runs tests and redeploys itself. A watchdog rolls it back if the new version fails its health check. <sub>Python · aiogram · dishka</sub>
-
-**♟ [jevchess](https://github.com/dytarasov/jevchess)**: chess against Jev, a decision model with no text output. Play it yourself or watch it face Stockfish. <sub>Python</sub>
-
-**Private:**
-- **Analyst Oslik**: text-to-report over ClickHouse. A ReAct agent retrieves from a PostgreSQL semantic layer, Neo4j and pgvector.
-- **[FastRide](https://frmoto.ru)**: a motorcycle rental platform in production (FastAPI, PostgreSQL, React).
+Software developer. Currently ML/AI engineering: LLM agents, RAG, tool calling. Also PostgreSQL and networking.
 
 ---
 
-<img src="https://skillicons.dev/icons?i=python,go,postgres,fastapi,docker,linux,nginx,react,ts&theme=dark" />
+**[ftybucks](https://github.com/dytarasov/ftybucks-public)**: VPN tunnel disguised as PostgreSQL streaming replication. PG wire handshake, libpq TLS fingerprint (uTLS), traffic in `CopyData` frames, X25519 + ChaCha20-Poly1305. Gateway mode: WireGuard ingress, GeoIP split routing, ECMP across N tunnels with failover. Go.
+
+**[claudetelegram](https://github.com/dytarasov/claudetelegram)**: Telegram interface to a persistent Claude Code session. Self-modifying: preflight checks, commit, restart. An external watchdog rolls back to the last stable revision on a failed health check. Python, aiogram, dishka.
+
+**[jevchess](https://github.com/dytarasov/jevchess)**: chess engine driven by the Jev decision model. Supports human vs. model and Stockfish vs. model. Python, python-chess.
+
+Private:
+- **Analyst Oslik**: text-to-SQL/report over ClickHouse. ReAct agent, retrieval over a PostgreSQL semantic layer, Neo4j and pgvector; guarded SQL execution; SSE streaming.
+- **[FastRide](https://frmoto.ru)**: rental platform in production. FastAPI, asyncpg, PostgreSQL 16, React, MinIO, Nginx.
+
+---
+
+Python · Go · PostgreSQL · FastAPI · Docker · Linux · ClickHouse · Neo4j · pgvector
