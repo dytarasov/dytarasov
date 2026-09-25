@@ -1,6 +1,6 @@
 ### Hi, I'm Dmitriy 👋
 
-Backend engineer: **PostgreSQL, networking, LLM agents**. I build systems that keep running without me.
+Software developer, currently working mostly as an **ML/AI engineer**: LLM agents, RAG and tool-calling pipelines. I also like PostgreSQL and networking.
 
 ---
 
